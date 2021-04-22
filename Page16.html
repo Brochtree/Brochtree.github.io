@@ -1,0 +1,46 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page16.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Tunnel.png" alt="An image of a tunnel." class="darkcave">
+		<p class="darkcave">
+			As you go through the cave it turns in to more of a tunnel, the natural stone gives way to smooth worked stone. the torches become magical lamps. and the air begins to feel warmer and warmer as you move forward.
+		</p>
+		<p class="cave">
+			<a class="button" onclick="Option1()" >Continue down the tunnel.</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				var x = Math.floor((Math.random() * 20) + 1);
+				var clas = localStorage.getItem("Class")
+				if (clas == "3"){
+					if (x <= 5){
+					// redirect
+					location.replace("Death.html")
+					}else{
+					// redirect
+					location.replace("Page17.html")
+					}
+				}else{
+					if (x <= 10){
+					// redirect
+					location.replace("Death.html")
+					}else{
+					// redirect
+					location.replace("Page17.html")
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Intro.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Path.png" alt="Image of a forest path." class="darkforest">
+		<p class="darkforest">
+			Welcome to the forest, somewhere in this forest is the Direforge, the Forge of the dwarven gods. Many have gone before you and never returned. Will you be the one to find the forge? Maybe, maybe not. Let us see.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Follow the eastern path.</a><br>
+			<a class="button" onclick="Option2()" >Follow the northern path.</a><br>
+			<a class="button" onclick="Option3()" >Follow the western path.</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("Page11.html")
+			}
+			
+			function Option2(){
+				// redirect
+				location.replace("Page21.html")
+			}
+			
+			function Option3(){
+				// redirect
+				location.replace("Page31.html")
+			}
+		</script>
+	</body>
+</html>

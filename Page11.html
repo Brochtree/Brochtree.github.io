@@ -1,0 +1,35 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page11.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Path fork.png" alt="Image of a forest path." class="darkforest">
+		<p class="darkforest">
+			You enter the forest, the pine trees are right up to the edge of the path, making it feel very opressive. In the far distance you can just see the top of a mountain. Ahead the path splits in two.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Take the left fork.</a><br>
+			<a class="button" onclick="Option2()" >Take the right fork.</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("Page12.html")
+			}
+			
+			function Option2(){
+				// redirect
+				location.replace("Page13.html")
+			}
+		</script>
+	</body>
+</html>

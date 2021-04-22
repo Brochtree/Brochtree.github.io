@@ -1,0 +1,52 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page12.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Goblin.png" alt="Image of a goblin." class="darkforest">
+		<p class="darkforest" id="text">
+			As you enter the clearing that opens up before you, there's a goblin sat eating something on the other side. Will you retreat and take another path or maybe attack the Goblin? He hasn't noticed you so far.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Attack the Goblin.</a><br>
+			<a class="button" onclick="Option2()" >Return to the fork in the road.</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				var x = Math.floor((Math.random() * 20) + 1);
+				var clas = localStorage.getItem("Class")
+				if (clas == "1"){
+					if (x <= 5){
+						// redirect
+						location.replace("Death.html")
+					}else{
+						// redirect
+						location.replace("Page13.html")
+					}
+				}else{
+					if (x <= 10){
+						// redirect
+						location.replace("Death.html")
+					}else{
+						// redirect
+						location.replace("Page13.html")
+					}
+				}
+			}
+			
+			function Option2(){
+				// redirect
+				location.replace("Page11.html")
+			}
+		</script>
+	</body>
+</html>

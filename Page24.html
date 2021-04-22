@@ -1,0 +1,45 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page24.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Path.png" alt="Image of a forest path." class="darkforest">
+		<p class="darkforest">
+			You continue up the path and can see the clearing ahead become more and more clear, you think there might be something in the clearing.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Continue North</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				var clas = localStorage.getItem("Class")
+				if (clas == "3"){
+					if (x <= 5){
+						// redirect
+						location.replace("Page15.html")
+					}else{
+						// redirect
+						location.replace("Page25.html")
+					}
+				}else{
+					if (x <= 10){
+						// redirect
+						location.replace("Page15.html")
+					}else{
+						// redirect
+						location.replace("Page25.html")
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

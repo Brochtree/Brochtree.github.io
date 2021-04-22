@@ -1,0 +1,41 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Storypage.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Class.png" alt="An image of a Man." class="darkforest">
+		<p class="darkforest">
+			The first decision in The forest is what class you want to be. This will effect things later on. There is three choices. Your classic Fighter, wearing heavy armour and carrying a big sword. The intelligent Mage, who deals with enemies with magic and intellect. and the spry Ranger, who fights his foes from afar.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Fighter</a><br>
+			<a class="button" onclick="Option2()" >Mage</a><br>
+			<a class="button" onclick="Option3()" >Ranger</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("Fighter.html")
+			}
+			
+			function Option2(){
+				// redirect
+				location.replace("Mage.html")
+			}
+			
+			function Option3(){
+				// redirect
+				location.replace("Ranger.html")
+			}
+		</script>
+	</body>
+</html>

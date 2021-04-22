@@ -1,0 +1,29 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page15.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Cave Entrance.png" alt="an image of a cave entrance." class="darkcave">
+		<p class="darkcave">
+			The cave ahead appears to be well lit; you can see torches hanging on the walls all the way inside. Scattered around the cave entrance is the bones of animals you would expect in the forest, Deer, wolves, rabbits, etc.
+		</p>
+		<p class="cave">
+			<a class="button" onclick="Option1()" >Continue down the tunnel.</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("Page16.html")
+			}
+		</script>
+	</body>
+</html>

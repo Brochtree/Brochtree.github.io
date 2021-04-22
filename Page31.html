@@ -1,0 +1,35 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page31.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Path fork.png" alt="Image of a forest path fork." class="darkforest">
+		<p class="darkforest">
+			As you enter the forest the tree's feel like ther right up against the path almost forming a tunnel. After a short walk you come to a fork in the path, the right hand fork leads north. While the left hand fork continues west.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >follow the left fork.</a><br>
+			<a class="button" onclick="Option2()" >follow the right fork.</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("Page24.html")
+			}
+			
+			function Option2(){
+				// redirect
+				location.replace("Page33.html")
+			}
+		</script>
+	</body>
+</html>

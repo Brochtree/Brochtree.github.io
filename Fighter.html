@@ -1,0 +1,33 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<img src="Images/Fighter.png" alt="An image of a Fighter." class="darkforest">
+		<p class="darkforest">
+			Fighter's are all about brawn over intellect. You wear heavy armour and carry a big sword. As a fighter you'll have an easier time dealing with monsters. But might miss some interesting details.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Pick Fighter</a><br>
+			<a class="button" onclick="Option3()" >Class Options</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// Store page
+				localStorage.setItem("class", "1");
+				// redirect
+				location.replace("Intro.html")
+			}
+			
+			function Option2(){
+				// redirect
+				location.replace("Class.html")
+			}
+		</script>
+	</body>
+</html>

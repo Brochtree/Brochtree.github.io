@@ -1,0 +1,38 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Home Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<h1 class="darkforest"> Direforge Forest</h1>
+		<p class="darkforest">
+			Hidden in Direforge forest is the ancient forge of the dwarven gods. Many have tried to find it; some have come back bearing riches. Others have not returned. Will you brave the forest in the search for the forge?
+		</p>
+		<P class="forest">
+			<button class="button" onclick="Startgame()" >Start</button><br>
+			<button class="button" onclick="Resumegame()" >Resume</button><br>
+			<button class="button" onclick="About()" >About</button>
+		</P>
+		
+		<script>
+			function Startgame(){
+				// redirect
+				location.replace("Class.html")
+			}
+			
+			function Resumegame(){
+				var page = localStorage.getItem("page")
+				// redirect
+				location.replace(page)
+			}
+			
+			function About(){
+				// redirect
+				location.replace("About.html")
+			}
+		</script>
+	</body>
+</html>

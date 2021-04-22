@@ -1,0 +1,29 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page21.html");
+		</script>
+	</head>
+	<body>
+		<img src="Images/Path.png" alt="Image of a forest path." class="darkforest">
+		<p class="darkforest">
+			The forest feels like it's right up against the edge of the path. You can't see anything other than the path ahead.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Continue North</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("SPage22.html")
+			}
+		</script>
+	</body>
+</html>

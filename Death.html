@@ -1,0 +1,37 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Death </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<p class="darkforest">
+			Sorry, you died. Hope you had fun. If you want to play again you can either resume from where you died or start a new game. Thanks for playing either way.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Home</a><br>
+			<a class="button" onclick="Option2()" >Resume</a><br>
+			<a class="button" onclick="Option3()" >Start</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("index.html")
+			}
+			
+			function Option2(){
+				var page = localStorage.getItem("page")
+				// redirect
+				location.replace(page)
+			}
+			
+			function Option3(){
+				// redirect
+				location.replace("Class.html")
+			}
+		</script>
+	</body>
+</html>

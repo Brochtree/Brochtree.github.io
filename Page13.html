@@ -1,0 +1,40 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script> 
+			// Store page
+			localStorage.setItem("page", "Page13.html");
+			var clas = localStorage.getItem("Class")
+			var x = Math.floor((Math.random() * 20) + 1);
+			if (clas == "2"){
+				if (x => 5){
+					document.getElementById("text").innerHTML = "The path continues forward ahead the mountain looms abouve you. It appears to dwarf everything around it. The tree's also appear to be thinning out. Also you can see what looks like dwarven ruins high on the mountain.";
+				}
+			}else{
+				if (x => 10){
+					document.getElementById("text").innerHTML = "The path continues forward ahead the mountain looms abouve you. It appears to dwarf everything around it. The tree's also appear to be thinning out. Also you can see what looks like dwarven ruins high on the mountain.";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<img src="Images/Path with mountain.png" alt="Image of a forest path with a mountain in the background." class="darkforest">
+		<p class="darkforest">
+			The path continues forward ahead the mountain looms abouve you. It appears to dwarf everything around it. The tree's also appear to be thinning out.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Continue East.</a><br>
+		</p>
+		
+		<script>
+			function Option1(){
+				// redirect
+				location.replace("Page14.html")
+			}
+		</script>
+	</body>
+</html>

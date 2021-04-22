@@ -1,0 +1,33 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF -8" />
+		<title> Story Page </title >
+		<link rel="stylesheet" href="Forest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<img src="Images/Ranger.png" alt="An image of a Ranger." class="darkforest">
+		<p class="darkforest">
+			Rangers are a ballance of brawn and Intellect. Your bow and survival sense will help you through. giving you a better chance at spotting traps.
+		</p>
+		<p class="forest">
+			<a class="button" onclick="Option1()" >Pick Ranger</a><br>
+			<a class="button" onclick="Option3()" >Class Options</a>
+		</p>
+		
+		<script>
+			function Option1(){
+				// Store page
+				localStorage.setItem("class", "3");
+				// redirect
+				location.replace("Intro.html")
+			}
+			
+			function Option2(){
+				// redirect
+				location.replace("Class.html")
+			}
+		</script>
+	</body>
+</html>
